@@ -1,6 +1,6 @@
-## Baza danych firmy kurierskiej
+# Baza danych firmy kurierskiej
 
-# Opis projektu
+## Opis projektu
 Celem projektu jest zaprojektowanie i stworzenie webowej aplikacji bazodanowej do wykorzystania przez firmę kurierską w celu uporządkowania . 
 
 Baza danych powstaje przy użyciu programu SQL Developer i języka PL/SQL.
