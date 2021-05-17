@@ -27,4 +27,4 @@ CALL addJob('juliusz@slowacki.pl', 'geba@geba.pl');
 
 CALL printClient('Prus', 'Boleslaw', 'bolek@prus.com');
 
-CALL delVehicle('42142100');
+--CALL delVehicle('42142100');
