@@ -9,8 +9,7 @@ DROP TABLE vehicles;
 CREATE TABLE addresses (
     address_id NUMBER NOT NULL,
     street VARCHAR2(40 CHAR) NOT NULL,
-    house_num NUMBER, 
-    flat_num NUMBER,
+    house_flat_num NUMBER NOT NULL, 
     level_num NUMBER,
     town VARCHAR2(30 CHAR) NOT NULL,
     zip_code VARCHAR2(6 CHAR) NOT NULL,
@@ -78,9 +77,4 @@ CREATE TABLE jobs (
     CONSTRAINT jobs_parcel_fk FOREIGN KEY(parcel_id) REFERENCES parcels(parcel_id),
     CONSTRAINT jobs_deal_fk FOREIGN KEY(deal_id) REFERENCES deals(deal_id)
 );
-
-
-
-
-
 
