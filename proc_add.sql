@@ -154,3 +154,27 @@ BEGIN
 
 END;
 /
+
+create or replace PROCEDURE addVehicle(
+    registration_num2 VARCHAR2,
+    v_capacity2 NUMBER,
+    v_load2 NUMBER
+)
+AS
+    n_count NUMBER;
+BEGIN
+    SELECT COUNT(1)
+    INTO n_count
+    FROM vehicles
+    WHERE registration_num2 = registration_num;
+    IF n_count > 0 THEN      
+        DBMS_OUTPUT.PUT_LINE('Record exist');
+
+    ELSE
+        INSERT INTO vehicles 
+        VALUES(vehicles_SEQ.NEXTVAL, registration_num2, v_capacity2, v_load2);
+        COMMIT; 
+    END IF;
+
+END;
+/
