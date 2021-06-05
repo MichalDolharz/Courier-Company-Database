@@ -103,13 +103,12 @@ END;
 
 create or replace PROCEDURE addParcels(
     p_type VARCHAR2, 
-    p_size VARCHAR2,
     x_dim NUMBER,
     y_dim NUMBER,
     z_dim NUMBER
 )
 AS BEGIN
-    INSERT INTO parcels VALUES(PARCELS_SEQ.NEXTVAL, p_type, p_size, x_dim, y_dim, z_dim);
+    INSERT INTO parcels VALUES(PARCELS_SEQ.NEXTVAL, p_type, parcelSize(x_dim, y_dim, z_dim), x_dim, y_dim, z_dim);
 END;
 /
 

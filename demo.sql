@@ -4,6 +4,8 @@
 @'D:\OneDrive - Politechnika Wroclawska\Studia\Bazy Danych\Projekt Mzyk\proc_add.sql';
 @'D:\OneDrive - Politechnika Wroclawska\Studia\Bazy Danych\Projekt Mzyk\proc_del.sql';
 @'D:\OneDrive - Politechnika Wroclawska\Studia\Bazy Danych\Projekt Mzyk\proc_print.sql'; 
+@'D:\OneDrive - Politechnika Wroclawska\Studia\Bazy Danych\Projekt Mzyk\proc_parcelSize.sql'; 
+
 
 CALL addAddress('Slowackiego 1', 1, NULL, 'Wroclaw', '50-000');
 CALL addAddress('Kiepury 4', 2, 1, 'Jelenia Gora', '58-506');
@@ -19,7 +21,7 @@ CALL addCourier('Mickiewicz', 'Adam', 928573948);
 CALL addVehicle('42142100', 60, 30);
 CALL addCourier('Reymont', 'Wladyslaw', 123123123);
 
-CALL addParcels('Priorytet', 'L', 10, 20, 5);
+CALL addParcels('Priorytet', 10, 20, 5);
 
 CALL addDeal(4, 'Nadejscie do magazynu');
 
