@@ -8,9 +8,9 @@ Baza danych powstaje przy użyciu programu SQL Developer i języka PL/SQL. Pliki
 Diagram ERD przedstawiający strukturę bazy danych znajduje się poniżej.
 ![Diagram ERD struktury bazy danych](img/ERD_diagram.png)
 
-Wykonawcy projektu:
+##Wykonawcy projektu:
  * Michał Maćkowiak
  * Michał Dołharz
 
- Prowadzący projekt:
+##Prowadzący projekt:
  * dr hab. inż. Grzegorz Mzyk, prof. PWr
